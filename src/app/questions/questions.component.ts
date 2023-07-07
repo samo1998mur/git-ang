@@ -57,7 +57,7 @@ export class QuestionsComponent implements OnInit {
    }
    levalHtml3(){
     this.activerouter.queryParams.subscribe(routParams => {
-      if(routParams.level === 'levelHtml2'){
+      if(routParams.level === 'levelHtml3'){
         this.service.getParams3()
             .subscribe((ques:QuesHtml[]) => {
                this.quesHtml = ques
