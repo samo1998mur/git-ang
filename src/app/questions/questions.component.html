@@ -1,0 +1,15 @@
+<div class="example-button-row">
+<button (click)="togle()" mat-flat-button color="primary">HTML</button>
+<div *ngIf="isChkBoxShown" class="block_l1">
+<button (click)="levalHtml1()" [disabled]="ischkBoxHiden1" class="l1" mat-stroked-button color="primary" [routerLink]="['/questions']" [queryParams]="{level:'levelHtml1'}" >l______1</button>
+<button (click)="levalHtml2()" [disabled]="ischkBoxHiden2" class="l1" mat-stroked-button color="primary" [routerLink]="['/questions']" [queryParams]="{level:'levelHtml2'}">l______2</button>
+<button (click)="levalHtml3()" [disabled]="ischkBoxHiden3" class="l1" mat-stroked-button color="primary" [routerLink]="['/questions']" [queryParams]="{level:'levelHtml3'}" >l______3</button>
+</div>
+
+</div>
+<div *ngFor="let quess of quesHtml">
+  <p>{{quess.id }}</p>
+  <p>{{quess.name}}</p>
+
+  <p>{{quess.body}}</p>
+</div>
