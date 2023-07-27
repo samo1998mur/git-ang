@@ -1,0 +1,47 @@
+[
+    {"id":0,
+    "question":"Which of the attributes can beused with all the html tags?",
+    "answers":[
+        {"id":0,"answer":"src"},
+        {"id":1,"answer":"alt"},
+        {"id":2,"answer":"title"},
+        {"id":3,"answer":"style"}
+    ]
+    },
+    {"id":1,
+    "question":"The way the browser displays an object be modified by _____",
+    "answers":[
+        {"id":0,"answer":"contaners"},
+        {"id":1,"answer":"attributes"},
+        {"id":2,"answer":"parameters"},
+        {"id":3,"answer":"None of the above"}
+    ]
+    },
+    {"id":2,
+    "question":"Which tag , and attributes, were used to introduce thepanda to the page we created?",
+    "answers":[
+        {"id":0,"answer":"<img>,src,width"},
+        {"id":1,"answer":"<title>,src"},
+        {"id":2,"answer":"<a>,href"},
+        {"id":3,"answer":"<p>,style"}
+    ]
+    },
+    {"id":3,
+    "question":"Which tag helped us in adding hyperlink to the Webpage?",
+    "answers":[
+        {"id":0,"answer":"<img>"},
+        {"id":1,"answer":"<a>"},
+        {"id":2,"answer":"<b>"},
+        {"id":3,"answer":"<h1>"}
+    ]
+    },
+    {"id":4,
+    "question":"background-color:yellow was set under which attribute?",
+    "answers":[
+        {"id":0,"answer":"src"},
+        {"id":1,"answer":"attri"},
+        {"id":2,"answer":"style"},
+        {"id":3,"answer":"color"}
+    ]
+    }
+    ]

@@ -1,0 +1,47 @@
+[
+    {"id":0,
+    "question":"What is the correct HTML tag for inserting a line break?",
+    "answers":[
+        {"id":0,"answer":"<break>"},
+        {"id":1,"answer":"<br>"},
+        {"id":2,"answer":"<new>"},
+        {"id":3,"answer":"<Ib>"}
+    ]
+    },
+    {"id":1,
+    "question":"Which of the Following tags have pair tags?",
+    "answers":[
+        {"id":0,"answer":"<body>"},
+        {"id":1,"answer":"<head>"},
+        {"id":2,"answer":"<b>"},
+        {"id":3,"answer":"All of them"}
+    ]
+    },
+    {"id":2,
+    "question":"Write your name l; inside the tag to display it on browser window",
+    "answers":[
+        {"id":0,"answer":"<title>Rashika</title>"},
+        {"id":1,"answer":"<p>__</p>"},
+        {"id":2,"answer":"<a>__</a>"},
+        {"id":3,"answer":"Hey Browser,please display it for me."}
+    ]
+    },
+    {"id":3,
+    "question":"There is atag that helps to create sections in your web page.What is that?",
+    "answers":[
+        {"id":0,"answer":"Subtraction"},
+        {"id":1,"answer":"Addition"},
+        {"id":2,"answer":"Division"},
+        {"id":3,"answer":"Break"}
+    ]
+    },
+    {"id":4,
+    "question":"Can you recall , what was the attribute used with the <a> tag?",
+    "answers":[
+        {"id":0,"answer":"src"},
+        {"id":1,"answer":"alt"},
+        {"id":2,"answer":"href"},
+        {"id":3,"answer":"title"}
+    ]
+    }
+    ]
