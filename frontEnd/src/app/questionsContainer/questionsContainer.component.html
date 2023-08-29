@@ -1,16 +1,14 @@
 <div class="example-button-row">
-<button (click)="toggle()" mat-flat-button color="primary">HTML</button>
+<ng-template appRef2></ng-template>
+<ng-template appTime></ng-template>
+ <button (click)="toggle()" mat-flat-button color="primary">HTML</button>
 <div *ngIf="isChkBoxShown" class="block_l1">
-<button  [disabled]="ischkBoxHiden1" class="l1" mat-stroked-button color="primary" [routerLink]="['/questions']" [queryParams]="{level:1}" >l______1</button>
-<button  [disabled]="ischkBoxHiden2" class="l1" mat-stroked-button color="primary" [routerLink]="['/questions']" [queryParams]="{level:2}">l______2</button>
+<button (click)="togglehtml1()" [disabled]="ischkBoxHiden1" class="l1" mat-stroked-button color="primary" [routerLink]="['/questions']" [queryParams]="{level:1}" >l______1</button>
+<button (click)="togglehtml2()" [disabled]="ischkBoxHiden2" class="l1" mat-stroked-button color="primary" [routerLink]="['/questions']" [queryParams]="{level:2}">l______2</button>
 <button  [disabled]="ischkBoxHiden3" class="l1" mat-stroked-button color="primary" [routerLink]="['/questions']" [queryParams]="{level:3}" >l______3</button>
+<app-timer *ngIf="ischkBoxHtml" (Counter)="timCounter($event)"></app-timer>
+<app-questions *ngIf="ischkBoxHtml" (ischkBox)="ischkBox1($event)" (correct)="isCorrect($event)"></app-questions>
 </div> 
-
 </div>
-<!-- <div *ngFor="let quess of quesHtml">  -->
-  <app-questions  ></app-questions>
-<!-- <p>{{quess.id }}</p>
-  <p>{{quess.name}}</p>
+<router-outlet></router-outlet>
 
-  <p>{{quess.body}}</p> 
-</div> -->

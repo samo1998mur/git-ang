@@ -3,7 +3,7 @@
 "answers":[
     {"id":0,"answer":"<body>"},
     {"id":1,"answer":"<head>"},
-    {"id":2,"answer":"<html>"},
+    {"id":2,"answer":"<html>","isCorrect":true},
     {"id":3,"answer":"Tags?Sorry i didn get you"}
 ]
 },
@@ -13,7 +13,7 @@
     {"id":0,"answer":"Text Editor"},
     {"id":1,"answer":"Common Sense"},
     {"id":2,"answer":"Web Browser"},
-    {"id":3,"answer":"All of the above"}
+    {"id":3,"answer":"All of the above","isCorrect":true}
 ]
 },
 {"id":2,
@@ -21,14 +21,14 @@
 "answers":[
     {"id":0,"answer":"Only Numbers"},
     {"id":1,"answer":"Upper case"},
-    {"id":2,"answer":"Lower case"},
+    {"id":2,"answer":"Lower case","isCorrect":true},
     {"id":3,"answer":"Symbols"}
 ]
 },
 {"id":3,
 "question":"<br> is a__?",
 "answers":[
-    {"id":0,"answer":"Self-Closing tag"},
+    {"id":0,"answer":"Self-Closing tag","isCorrect":true},
     {"id":1,"answer":"Closing tag"},
     {"id":2,"answer":"Opening tag"},
     {"id":3,"answer":"Symbols"}
@@ -39,7 +39,7 @@
 "answers":[
     {"id":0,"answer":"<heading>"},
     {"id":1,"answer":"<head>"},
-    {"id":2,"answer":"<h1>"},
+    {"id":2,"answer":"<h1>","isCorrect":true},
     {"id":3,"answer":"<text>"}
 ]
 }

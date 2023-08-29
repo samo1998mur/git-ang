@@ -70,3 +70,7 @@
 .form-group{
   margin-left: 25px;
 }
+
+label{
+ width: 300px; 
+}

@@ -12,6 +12,9 @@ section {
 .example-button-row {
   display: table-cell;
   max-width: 600px;
+  flex: 1 1 auto;
+  padding-bottom: 94px;
+  /* z-index: 1040; */
 }
 
 .example-button-row .mat-mdc-button-base {

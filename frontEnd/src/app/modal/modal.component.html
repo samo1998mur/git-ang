@@ -1,0 +1,10 @@
+<!-- <p>modal works!</p> -->
+<div class="backdrop">
+</div>
+<div class="modal">
+    <p> Correct {{correct}}</p>
+    <p> Wrong {{wrong}}</p>
+    <!-- <p *ngFor="let ans of ansver">{{ans.id}}</p> -->
+    <button class="btn" (click)="close.emit()">Close</button>
+    <button class="btn" (click)="toCheck.emit()">To Check</button>
+</div>
