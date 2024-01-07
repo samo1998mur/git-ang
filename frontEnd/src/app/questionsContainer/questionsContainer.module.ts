@@ -17,7 +17,13 @@ import { Modal2Component } from "../modal2/modal2.component";
 import { Ref2Directive } from "./ref2.directive";
 import { TimeDirective } from "./time.directive";
 import { TimeModalComponent } from "../time-modal/time-modal.component";
+import { Ref1Directive } from "./ref1.directive";
 import { TocheckComponent } from "../tocheck/tocheck.component";
+import { TocheckService } from "../tocheck/tocheck.service";
+
+
+
+
 
 
 @NgModule({
@@ -31,6 +37,7 @@ import { TocheckComponent } from "../tocheck/tocheck.component";
         Ref2Directive,
         TimeDirective,
         TimeModalComponent,
+        Ref1Directive,
         TocheckComponent
       
     ],
@@ -44,11 +51,14 @@ import { TocheckComponent } from "../tocheck/tocheck.component";
       HttpClientModule,
       MatRadioModule,
       RouterModule.forChild([
-        {path:'',component:QuestionsContainerComponent,children:[
+        {path:'',component:QuestionsContainerComponent}   , 
+        
+        {path:'',children:[
           {path: 'tochect',component:TocheckComponent}
-        ]}      ])
+        ]}
+      ])
     ],
-    providers: [QuestionsService],
+    providers: [QuestionsService,TocheckService],
     entryComponents:[ModalComponent,Modal2Component,TimeModalComponent]
   })
 export class QuestionsModule{

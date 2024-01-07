@@ -1,1 +1,29 @@
-<p>tocheck works!oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo</p>
+<div class="Container">
+  <div *ngFor="let question of questionsArray; let idx = index" class="questions">
+    <label class="question">{{idx+1}}. {{question.question}}</label>
+    <div class="form-group"   >
+      <label *ngFor="let answer of question.answers; let id =index" class="container">
+        <ng-container
+          *ngIf="answerAry[idx].correct==id">
+          {{answer.answer}}
+          <div [ngStyle]="{'border-bottom': '1px solid rgb(0, 255, 34)'}"></div>
+          <span class="checkmark">{{id+1}}.</span><br>
+        </ng-container>
+          <ng-container
+          *ngIf="answerAry[idx].isCorrect==false">
+            <ng-container
+            *ngIf="answerAry[idx].shipped==id">
+            {{answer.answer}}
+            <div [ngStyle]="{'border-bottom': '1px solid rgb(255, 0, 0)'}"></div>
+            <span class="checkmark">{{id+1}}.</span><br>
+          </ng-container>
+        </ng-container>
+        <ng-container
+          *ngIf="answerAry[idx].correct!=id && answerAry[idx].shipped!=id">
+          {{answer.answer}}
+          <span class="checkmark">{{id+1}}.</span><br>
+        </ng-container>
+      </label>
+    </div> 
+  </div>
+</div>

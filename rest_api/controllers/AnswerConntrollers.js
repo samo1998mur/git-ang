@@ -25,7 +25,7 @@ class AnswerConntrollers {
      static putAnswerHtml1 = async (req,res) => {
         console.log(req)
         if(!req.body) return res.sendStatus(400);
-            const bodyData = req.body.formdata;
+            // const bodyData = req.body.formdata;
             const content = fs.readFileSync(filePathlevelhtml1,"utf8");
             const question = JSON.parse(content);
             const isCorrectArray = [];
@@ -34,10 +34,10 @@ class AnswerConntrollers {
             for(let i=0; i<question.length; i++){
                 const findAnswer = question[i].answers.findIndex(answers => answers.isCorrect===true)   
                     if(req.body.formdata[i]==findAnswer){
-                        isCorrectArray.push({id:i,isCorrect:true,correct:findAnswer})
+                        isCorrectArray.push({id:i,isCorrect:true,correct:findAnswer,shipped:req.body.formdata[i]})
                         quantityTrue += 1
                     }else{
-                        isCorrectArray.push({id:i,isCorrect:false,correct:findAnswer})
+                        isCorrectArray.push({id:i,isCorrect:false,correct:findAnswer,shipped:req.body.formdata[i]})
                         quantityFalse +=1
                     }        
             }

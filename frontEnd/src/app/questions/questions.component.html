@@ -1,21 +1,16 @@
-
-<ng-template appRef></ng-template>
 <form [formGroup]="form" (ngSubmit)="submit()" >
-
-  
-
-<div *ngFor="let question of questionsArray; let idx = index" class="questionContainer">
-<label class="question" >{{idx+1}}. {{question.question}}</label>
+  <div *ngFor="let question of questionsArray; let idx = index" class="questionContainer" >
+    <label class="question" oncopy="return false">{{idx+1}}. {{question.question}}</label>
 
 
-      <div class="form-group" >
-     <label *ngFor="let answer of question.answers; let id =index" class="container">{{answer.answer}}
-      <input type="radio" checked="checked" class="radio" value="{{id}}" formControlName="{{idx}}">
+    <div class="form-group">
+      <label *ngFor="let answer of question.answers; let id =index" class="container">{{answer.answer}}
+        <input type="radio" checked="checked" class="radio" value="{{id}}" formControlName="{{idx}}">
         <span class="checkmark"></span><br>
-    </label>
- </div> 
-  
-  
-</div>
-<button class="btn" type="submit" [disabled] = "form.invalid" >Submit</button>
+      </label>
+    </div>
+
+
+  </div>
+  <button class="btn" type="submit" [disabled]="form.invalid">Submit</button>
 </form>

@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { DatestorageService } from './datestorage.service';
+
 
 
 @NgModule({
@@ -13,13 +15,14 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     FooterComponent,
    
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [DatestorageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

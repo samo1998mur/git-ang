@@ -1,7 +1,6 @@
 import { Component, OnInit, Output ,EventEmitter, OnDestroy} from '@angular/core';
 import { FormData } from '../questions/questions.service';
 import { filter } from 'rxjs/operators';
-// import { FormData, QuestionsArray,QuestionsService } from './questions/q;
 
 
 
